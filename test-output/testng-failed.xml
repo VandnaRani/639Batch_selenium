@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testng.FB_login1">
+      <class name="testngvandna.ScreenShot">
         <methods>
-          <include name="facebook"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- testng.FB_login1 -->
+      </class> <!-- testngvandna.ScreenShot -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
