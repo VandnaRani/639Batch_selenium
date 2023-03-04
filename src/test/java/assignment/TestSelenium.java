@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -177,9 +178,21 @@ public class TestSelenium {
 		new Select (driver.findElement(By.id("scc_rt_passengers_numrooms"))).selectByVisibleText("2 Rooms");
 				
 		new Select (driver.findElement(By.id("passengers_1_adults"))).selectByVisibleText("2 Adults");
-	driver.findElement(By.id("scc_rt_submit")).click();
+		driver.findElement(By.id("scc_rt_submit")).click();
 		
-			
+		//Wait until id=lnkHotelTileClick0 timeout 30 sec then click
+		
+		//Switch Window
+		driver.switchTo().newWindow(WindowType.TAB);
+		//click name=hotelRoomBtn
+		
+		//Click name= hotelComponentBtn
+		
+		//wait until id=ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_ctl02_ctl02_insuranceOptions_insurancePrompt_0 then click
+		
+		//click css = .continue-booking-button
+	
+
 
 				 
 				
