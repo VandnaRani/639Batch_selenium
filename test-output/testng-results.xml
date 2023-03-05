@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-03T01:15:40 CST" name="Default suite" finished-at="2023-03-03T01:15:48 CST" duration-ms="7970">
+  <suite started-at="2023-03-05T15:55:05 CST" name="Default suite" finished-at="2023-03-05T15:55:18 CST" duration-ms="13184">
     <groups>
     </groups>
-    <test started-at="2023-03-03T01:15:40 CST" name="Default test" finished-at="2023-03-03T01:15:48 CST" duration-ms="7970">
+    <test started-at="2023-03-05T15:55:05 CST" name="Default test" finished-at="2023-03-05T15:55:18 CST" duration-ms="13184">
       <class name="testngvandna.ScreenShot">
-        <test-method signature="f()[pri:0, instance:testngvandna.ScreenShot@5876a9af]" started-at="2023-03-03T01:15:40 CST" name="f" finished-at="2023-03-03T01:15:48 CST" duration-ms="7920" status="PASS">
+        <test-method signature="f()[pri:0, instance:testngvandna.ScreenShot@5876a9af]" started-at="2023-03-05T15:55:05 CST" name="f" finished-at="2023-03-05T15:55:18 CST" duration-ms="13152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->

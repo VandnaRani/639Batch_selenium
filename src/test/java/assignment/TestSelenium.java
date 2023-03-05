@@ -169,7 +169,7 @@ public class TestSelenium {
 		driver.findElement(By.xpath("//*[@id=\"desAC_dropdown\"]/div[3]/div")).click();
 		WebElement element = driver.findElement(By.id("depDT_value"));
 		element.clear();
-		element.sendKeys("3/5/2023");
+		element.sendKeys("3/10/2023");
 		
 		
 			
@@ -180,19 +180,45 @@ public class TestSelenium {
 		new Select (driver.findElement(By.id("passengers_1_adults"))).selectByVisibleText("2 Adults");
 		driver.findElement(By.id("scc_rt_submit")).click();
 		
-		//Wait until id=lnkHotelTileClick0 timeout 30 sec then click
-		
+		WebDriverWait waiter = new WebDriverWait(driver, Duration.ofSeconds(5));
+		WebElement firsthotel= waiter.until(ExpectedConditions.presenceOfElementLocated(By.id("lnkHotelTileClick0")));
+		firsthotel.click();
+		//Wait for the new window or tab
+		//waiter.until(numberOfWindowsToBe(2));
+		String originalWindow = driver.getWindowHandle();
+
+		//Loop through until we find a new window handle
+		for (String windowHandle : driver.getWindowHandles()) {
+		    if(!originalWindow.contentEquals(windowHandle)) {
+		        driver.switchTo().window(windowHandle);
+		        break;
+		    }
+		}
+		driver.findElement(By.name("hotelRoomBtn")).click();
 		//Switch Window
-		driver.switchTo().newWindow(WindowType.TAB);
+//		driver.switchTo().newWindow(WindowType.TAB);
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
+//		Thread.sleep(2000);
 		//click name=hotelRoomBtn
 		
-		//Click name= hotelComponentBtn
-		
+		driver.findElement(By.name("hotelComponentBtn")).click();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
+//		Thread.sleep(2000);
 		//wait until id=ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_ctl02_ctl02_insuranceOptions_insurancePrompt_0 then click
-		
+		driver.findElement(By.cssSelector(".continue-booking-button")).click();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
+//		Thread.sleep(2000);
 		//click css = .continue-booking-button
+		waiter   = new WebDriverWait(driver, Duration.ofSeconds(5));
+		WebElement TravelProtection= waiter.until(ExpectedConditions.presenceOfElementLocated(By.id("ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_ctl02_ctl02_insuranceOptions_insurancePrompt_0")));
+		TravelProtection.click();
+		Thread.sleep(5000);
+		waiter   = new WebDriverWait(driver, Duration.ofSeconds(5));
+		WebElement Continue = waiter.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".continue-booking-button")));
+		Continue.click();
+		driver.findElement(By.id("summaryCartContinueBtn")).click();
 	
-
+		
 
 				 
 				
