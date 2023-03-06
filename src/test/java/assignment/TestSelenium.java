@@ -216,13 +216,36 @@ public class TestSelenium {
 		waiter   = new WebDriverWait(driver, Duration.ofSeconds(5));
 		WebElement Continue = waiter.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".continue-booking-button")));
 		Continue.click();
-		driver.findElement(By.id("summaryCartContinueBtn")).click();
-	
-		
+		//driver.findElement(By.id("summaryCartContinueBtn")).click();
+		driver.findElement(By.id("ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_TravelerInfotool_TravelersInput_RptTravelers_ctl00_TravelerInput_pr_ctl00_pi_FirstName")).sendKeys("vandna");
+	driver.findElement(By.className("middleInitialField")).sendKeys("VR");
+	driver.findElement(By.id("ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_TravelerInfotool_TravelersInput_RptTravelers_ctl00_TravelerInput_pr_ctl00_pi_LastName")).sendKeys("Dhiman");
+	driver.findElement(By.id("ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_TravelerInfotool_TravelersInput_RptTravelers_ctl00_TravelerInput_pr_ctl00_pi_LeadPassenger_PhoneNo")).sendKeys("8474716050");
+	driver.findElement(By.id("ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_TravelerInfotool_TravelersInput_RptTravelers_ctl00_TravelerInput_pr_ctl00_pi_LeadPassenger_MobileNo")).sendKeys("7742327470");	
+driver.findElement(By.id("ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_TravelerInfotool_TravelersInput_RptTravelers_ctl00_TravelerInput_pr_ctl00_pi_LeadPassenger_EmailAddress")).sendKeys("uvojasvi@gmail.com");
+				 Thread.sleep(3000);
+driver.findElement(By.id("ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_TravelerInfotool_TravelersInput_RptTravelers_ctl00_TravelerInput_pr_ctl01_pi_FirstName")).sendKeys("Utkarsh");
+Thread.sleep(1000);
+driver.findElement(By.id("ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_TravelerInfotool_TravelersInput_RptTravelers_ctl00_TravelerInput_pr_ctl01_pi_MiddleInitial")).sendKeys("UT");
+driver.findElement(By.id("ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_TravelerInfotool_TravelersInput_RptTravelers_ctl00_TravelerInput_pr_ctl01_pi_LastName")).sendKeys("Dhiman");
 
-				 
-				
+driver.findElement(By.id("ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_TravelerInfotool_TravelersInput_RptTravelers_ctl01_TravelerInput_pr_ctl00_pi_FirstName")).sendKeys("ojasvi");
+
+		driver.findElement(By.id("ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_TravelerInfotool_TravelersInput_RptTravelers_ctl01_TravelerInput_pr_ctl00_pi_MiddleInitial")).sendKeys("ojas");
+		driver.findElement(By.id("ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_TravelerInfotool_TravelersInput_RptTravelers_ctl01_TravelerInput_pr_ctl00_pi_LastName")).sendKeys("Dhiman");
+		driver.findElement(By.id("ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_TravelerInfotool_TravelersInput_RptTravelers_ctl01_TravelerInput_pr_ctl01_pi_FirstName")).sendKeys("Vani");
+		driver.findElement(By.id("ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_TravelerInfotool_TravelersInput_RptTravelers_ctl01_TravelerInput_pr_ctl01_pi_MiddleInitial")).sendKeys("VN");
+		driver.findElement(By.id("ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_TravelerInfotool_TravelersInput_RptTravelers_ctl01_TravelerInput_pr_ctl01_pi_LastName")).sendKeys("Dhiman");
+		Thread.sleep(2000);
+		driver.findElement(By.id("ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_TravelerInfotool_submit")).click();
 	}
+	//ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_TravelerInfotool_TravelersInput_RptTravelers_ctl00_TravelerInput_pr_ctl01_pi_FirstName
+	//ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_TravelerInfotool_TravelersInput_RptTravelers_ctl00_TravelerInput_pr_ctl01_pi_MiddleInitial
+	//ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_TravelerInfotool_TravelersInput_RptTravelers_ctl00_TravelerInput_pr_ctl00_pi_FirstName
+	//ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_TravelerInfotool_TravelersInput_RptTravelers_ctl00_TravelerInput_pr_ctl01_pi_FirstName
+	//ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_TravelerInfotool_TravelersInput_RptTravelers_ctl01_TravelerInput_pr_ctl00_pi_FirstName
+	//ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_TravelerInfotool_TravelersInput_RptTravelers_ctl01_TravelerInput_pr_ctl01_pi_FirstName
+	//ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_TravelerInfotool_TravelersInput_RptTravelers_ctl01_TravelerInput_pr_ctl01_pi_LastName
 
 	private static void checkforoffer(WebDriver driver) throws InterruptedException {
 		try {
