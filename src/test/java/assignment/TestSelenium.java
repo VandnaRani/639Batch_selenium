@@ -43,6 +43,7 @@ public class TestSelenium {
 		driver.findElement(By.id("ctl01_ContentPlaceHolder_ctl02_MyAccountLogin_RequestPasswordResetToken")).click();
 		
 		
+		
 		//driver.findElement(By.id("ctl01_ContentPlaceHolder_ctl02_MyAccountLogin_LoginButton")).click();
 	
 		Thread.sleep(2000);
