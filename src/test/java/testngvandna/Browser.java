@@ -13,6 +13,7 @@ public class Browser {
   @Test
   public void f() throws Exception {
 	  WebDriver driver = new ChromeDriver();
+	  
 	  driver = new FirefoxDriver();
 	  Thread.sleep(2000);
 	  driver = new EdgeDriver();
@@ -22,6 +23,9 @@ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
 	  driver.get("https://collegeweeklive.com/go-signup/");
 
 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
+
+
+
 
 	  
   }
