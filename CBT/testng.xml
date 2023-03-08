@@ -5,7 +5,7 @@
 		<parameter name="browserName" value="Chrome"></parameter>
 		<classes>
 			<class name="testngvandna.CrossBrowserTesting" />
-			<class name="testngvandna.Collegeweekly.java" />
+			<class name="testngvandna.Collegeweekly" />
 			
 		</classes>	
 	</test> <!-- Test -->
@@ -14,7 +14,7 @@
 		<parameter name="browserName" value="edge"></parameter>
 		<classes>
 			<class name="testngvandna.CrossBrowserTesting" />
-			<class name="testngvandna.Collegeweekly.java"/>	
+			<class name="testngvandna.Collegeweekly"/>	
 		</classes>
 	</test> <!-- Test -->
 
@@ -22,7 +22,7 @@
 		<parameter name="browserName" value="Firefox"></parameter>
 		<classes>
 			<class name="testngvandna.CrossBrowserTesting" />
-			<class name="testngvandna.Collegeweekly.java"/>		
+			<class name="testngvandna.Collegeweekly"/>		
 		</classes>
 	</test> <!-- Test -->
 
