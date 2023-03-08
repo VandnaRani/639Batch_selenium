@@ -16,12 +16,13 @@ public class Alertsample {
 		driver.findElement(By.linkText("CONTINUE TO LOGIN")).click();
 		driver.findElement(By.partialLinkText("New User ")).click();
 		System.out.println(driver.switchTo().alert().getText());
-		
-		
 		Thread.sleep(3000);
 		driver.switchTo().alert().dismiss();
 		Thread.sleep(6000);
-		driver.close();
+		
+		
+		
+	
 
 		
 		 
