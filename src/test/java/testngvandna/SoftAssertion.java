@@ -32,14 +32,14 @@ public class SoftAssertion {
 		//System.out.println("Test case is Pass");
 		
 		
-		String expectedName = "Paul Collingss";
+		String expectedName = "Paul Collings";
 				
 				
 		SoftAssert s = new SoftAssert();
 		s.assertEquals(expectedName, abc);
 		System.out.println("Test case is Pass");
+	
 		s.assertAll();
-		
 
 
 		
