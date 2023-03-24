@@ -1,7 +1,10 @@
 package testngvandna;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,7 +19,7 @@ public class collgeweeksampleTest {
   
   
   @BeforeClass
-  public void browserLaunch(String browserName) {
+  public void browser(@Optional("FireFox") String browserName) {
 		if(browserName.equalsIgnoreCase("FireFox")){
 		driver = new FirefoxDriver();
 	} else if(browserName.equalsIgnoreCase("Edge")) {

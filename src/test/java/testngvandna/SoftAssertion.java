@@ -5,6 +5,7 @@ import static org.testng.Assert.assertEquals;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -12,7 +13,7 @@ import org.testng.asserts.SoftAssert;
 public class SoftAssertion {
   @Test
   public void f() throws Exception {
-	  WebDriver driver = new ChromeDriver();
+	  WebDriver driver = new FirefoxDriver();
 
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		Thread.sleep(6000);

@@ -1,15 +1,17 @@
 package testngvandna;
 
+import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 public class Collegeweekly {
   @Test
   public void f() throws Exception {
 	  
-	  WebDriver driver = new ChromeDriver();
+	  WebDriver driver = new FirefoxDriver();
 		driver.get("https://collegeweeklive.com/go-signup/");
 		Thread.sleep(5000);
 		driver.findElement(By.id("firstName")).sendKeys("Ojasvi");

@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -14,13 +15,12 @@ public class CrossBrowserTesting12 {
 
 	@Parameters("browserName")
 	@BeforeClass
-	public void browserLaunch(String browserName) {
-		if (browserName.equalsIgnoreCase("chrome")) {
-			driver = new FirefoxDriver();
-		} else if (browserName.equalsIgnoreCase("edge")) {
+	public void browser(@Optional("FireFox") String browserName) {
+		
+		 if (browserName.equalsIgnoreCase("edge")) {
 			driver = new EdgeDriver();
 		} else if (browserName.equalsIgnoreCase("firefox")) {
-			driver = new ChromeDriver();
+			driver = new FirefoxDriver();
 		} else {
 			System.out.println("Please give valid browser name ******");
 		}
@@ -29,9 +29,10 @@ public class CrossBrowserTesting12 {
 	}
 
 	@Test
-	public void f() {
-		driver.get("https://www.google.com/");
-		driver.findElement(By.name("q")).sendKeys("Hello Selenium");
+	public void f() throws Exception {
+		driver.get("https://www.facebook.com/");
+		Thread.sleep(3000);
+		
 		
 		
 	}

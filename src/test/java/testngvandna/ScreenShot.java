@@ -10,6 +10,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.io.FileHandler;
 import org.testng.annotations.Test;
 
@@ -17,7 +18,7 @@ import org.testng.annotations.Test;
 public class ScreenShot {
   @Test
   public void f() throws InterruptedException,Exception {
-	  WebDriver driver = new ChromeDriver();
+	  WebDriver driver = new FirefoxDriver();
 
 		driver.get("https://Amazon.com");
 		Thread.sleep(4000);

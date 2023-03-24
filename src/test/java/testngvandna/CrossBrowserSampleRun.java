@@ -2,6 +2,7 @@ package testngvandna;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -15,15 +16,13 @@ public class CrossBrowserSampleRun {
 	WebDriver driver;
   @Parameters("browserName")
   @BeforeClass
-  public void browserLaunch(String browserName) {
+  public void browser(@Optional("FireFox") String browserName) {
 	  if(browserName.equalsIgnoreCase("Firefox")) {
 		  driver = new FirefoxDriver();
 	  }else if(browserName.equalsIgnoreCase("edge")) {
 		  driver = new EdgeDriver();
-	  } else if(browserName.equalsIgnoreCase("Chrome")){
-		  driver = new ChromeDriver();
-	  } else {
-		  System.out.println("Please give valid browser name" );
+	  
+	 
 	  }
   }
 
@@ -33,6 +32,6 @@ public class CrossBrowserSampleRun {
   @Test
   public void f() {
 	  driver.get("https://www.google.com/");
-	  driver.findElement(By.name("q")).sendKeys("News");
+	  
   }
 }
