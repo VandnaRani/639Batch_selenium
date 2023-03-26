@@ -3,13 +3,6 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testngvandna.collgeweeksampleTest">
-        <methods>
-          <include name="browser"/>
-          <include name="f"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- testngvandna.collgeweeksampleTest -->
       <class name="testngvandna.NewAssignment12">
         <methods>
           <include name="f"/>
