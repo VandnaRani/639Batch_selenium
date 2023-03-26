@@ -3,12 +3,14 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testngvandna.collgeweeksampleTest"/>
+      <!-- <class name="testngvandna.collgeweeksampleTest"/>
       <class name="testngvandna.CrossBrowserSampleRun"/>
       <class name="testngvandna.Collegeweekly"/>
       <class name="testngvandna.CrossBrowserTesting12"/>
       <class name="testngvandna.Priority"/>
       <class name ="testngvandna.NewAssignment12"/>
+       -->
+      <class name = "testscenario.TagName"/>
       
 
       

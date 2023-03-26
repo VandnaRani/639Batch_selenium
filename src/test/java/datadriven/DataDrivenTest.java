@@ -27,12 +27,12 @@ public class DataDrivenTest {
 		
 		
 		WebDriver driver = new FirefoxDriver();
-		driver.get("https://www.facebook.com/");
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
 		Thread.sleep(2000);
 		
-		driver.findElement(By.id("email")).sendKeys(username.getStringCellValue());
-		driver.findElement(By.id("pass")).sendKeys(password.getStringCellValue());
+		driver.findElement(By.name("username")).sendKeys(username.getStringCellValue());
+		driver.findElement(By.name("password")).sendKeys(password.getStringCellValue());
 		Thread.sleep(2000);
 		
 	}
