@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 public class DataHybridorangehrm {
   @Test
   public void f() throws Exception {
-	  FileInputStream fi = new FileInputStream("C:\\Users\\uvoja\\639Batch\\Selenium_vandna\\TestData.Xlxs.xlsx");
+	  FileInputStream fi = new FileInputStream("C:\\Users\\uvoja\\639Batch\\Selenium_vandna\\TestData.xlsx");
 		Workbook w = new XSSFWorkbook(fi);
 		Sheet s = w.getSheet("orcm"); 
 		//Row number

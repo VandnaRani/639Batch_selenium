@@ -32,7 +32,7 @@ public class DataFacebook {
 		Thread.sleep(1000);
 		driver.findElement(By.name("login")).click();
 		//Validation message
-		if(driver.findElements(By.partialLinkText("Find your account and log in.")).size()>0){
+		if(driver.findElements(By.partialLinkText("Find your account and log in")).size()>0){
 			System.out.println("The given credentials were Invalid");
 		}else {
 			System.out.println("The given credentials were valid");

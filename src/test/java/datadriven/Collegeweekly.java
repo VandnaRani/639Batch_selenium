@@ -20,7 +20,7 @@ import org.testng.annotations.Test;
 public class Collegeweekly {
   @Test
   public void test() throws Exception {
-	  FileInputStream fi = new FileInputStream("C:\\Users\\uvoja\\639Batch\\Selenium_vandna\\TestData.Xlxs.xlsx");
+	  FileInputStream fi = new FileInputStream("C:\\Users\\uvoja\\639Batch\\Selenium_vandna\\TestData.Xlsx");
 	  Workbook b = new XSSFWorkbook(fi);
 	  Sheet c = b.getSheet("Sheet1");
 	  Row d = c.getRow(1);
